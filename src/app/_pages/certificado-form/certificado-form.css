@@ -1,0 +1,105 @@
+.custom-card {
+  display: flex;
+  flex-direction: column;
+  max-width: 672px;
+  gap: 20px;
+  padding: 32px;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+}
+
+.card-title {
+  color: #1a2856;
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: bold;
+}
+
+label {
+  color: #1a2856;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 500;
+}
+
+.atividade-group {
+  margin-bottom: 12px;
+}
+
+.item-list {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 12px;
+  padding: 16px;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.item-list hr {
+  all: unset;
+  display: block;
+  height: 1px;
+  background-color: #e2e8f0;
+  margin: 0;
+}
+
+.remove-btn i {
+  font-size: 15px;
+  color: #e95f5f;
+  padding: 5.75px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.remove-btn i:hover {
+  background-color: #e2e8f0;
+}
+
+.custom-input {
+  height: 40px;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  padding: 8px 12px;
+  box-shadow: none;
+}
+
+.custom-input:focus {
+  border: 1px solid #3b5ac2;
+  box-shadow: none;
+}
+
+.custom-input-group:has(input:focus) label {
+  color: #3b5ac2;
+}
+
+.error-message {
+  gap: 4px;
+  margin-top: 8px;
+}
+
+.error-message p {
+  color: #d71d1d;
+  font-size: 12px;
+  line-height: 16px;
+  vertical-align: middle;
+  letter-spacing: 0;
+}
+
+.error-message i {
+  color: #e95f5f;
+}
+
+.custom-input-group:has(.error-message) label {
+  color: #d71d1d;
+}
+
+app-primary-button {
+  margin: 0px auto;
+}

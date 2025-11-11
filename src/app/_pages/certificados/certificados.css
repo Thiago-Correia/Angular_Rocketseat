@@ -1,0 +1,39 @@
+.custom-card {
+  max-width: 672px;
+  gap: 20px;
+  padding: 48px 32px 56px 32px;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.custom-card i {
+  font-size: 48px;
+  color: #64748b;
+}
+
+.custom-warning-titles {
+  gap: 2px;
+}
+
+.card-title {
+  color: #1a2856;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 0;
+  line-height: 20px;
+}
+
+.card-text {
+  color: #64748b;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 16px;
+}
+
+.list-certificates {
+  max-width: 672px;
+}

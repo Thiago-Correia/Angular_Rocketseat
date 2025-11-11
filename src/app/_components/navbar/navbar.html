@@ -1,0 +1,41 @@
+<nav class="navbar navbar-expand-lg">
+  <div class="container-fluid">
+    <a routerLink="" class="navbar-logo">
+      <img src="navbar/logo.svg" alt="logo" />
+    </a>
+    <div class="collapse navbar-collapse justify-content-end">
+      <ul class="navbar-nav d-flex gap-3">
+        <li class="nav-item d-flex align-items-center">
+          <i
+            routerLink="/"
+            routerLinkActive="active"
+            [routerLinkActiveOptions]="{ exact: true }"
+            class="ph ph-medal"
+          ></i>
+          <a
+            routerLink="/"
+            routerLinkActive="active"
+            [routerLinkActiveOptions]="{ exact: true }"
+            class="nav-link"
+            >Lista de certificados</a
+          >
+        </li>
+        <li class="nav-item d-flex align-items-center">
+          <i
+            routerLink="/certificados/novo"
+            routerLinkActive="active"
+            [routerLinkActiveOptions]="{ exact: true }"
+            class="ph ph-circles-three-plus"
+          ></i>
+          <a
+            routerLink="/certificados/novo"
+            routerLinkActive="active"
+            [routerLinkActiveOptions]="{ exact: true }"
+            class="nav-link"
+            >Gerar certificado</a
+          >
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

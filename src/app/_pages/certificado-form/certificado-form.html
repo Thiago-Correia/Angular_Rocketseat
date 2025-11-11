@@ -1,0 +1,69 @@
+<form #form="ngForm" novalidate class="d-flex flex-column align-items-center">
+  <div class="content-titles">
+    <h1 class="fw-bold custom-title">Geração de Certificados</h1>
+    <p class="mb-4 custom-text">Preencha os dados para gerar um novo certificado</p>
+  </div>
+  <div class="custom-card w-100">
+    <h2 class="card-title">Novo certificado</h2>
+    <div class="custom-input-group">
+      <label class="form-label">Nome Completo</label>
+      <input
+        [(ngModel)]="nome"
+        #nomeRef="ngModel"
+        name="nome"
+        maxlength="150"
+        required
+        type="text"
+        class="form-control custom-input"
+        placeholder="Nome do aluno"
+      />
+      @if(campoValido(nomeRef)){
+      <div class="error-message d-flex align-items-center">
+        <i class="ph ph-warning-circle"></i>
+        <p class="m-0">Nome é necessário</p>
+      </div>
+      }
+    </div>
+    <div class="d-flex align-items-end custom-input-group">
+      <div class="flex-grow-1 me-2">
+        <label class="form-label">Atividade</label>
+        <input
+          [(ngModel)]="atividade"
+          #atividadeRef="ngModel"
+          name="atividade"
+          maxlength="50"
+          required
+          type="text"
+          class="form-control custom-input"
+          placeholder="Atividade exercida"
+        />
+      </div>
+      <app-secondary-button
+        (click)="adicionarAtividade()"
+        [disabled]="!atividade || atividade.length == 0"
+        text="Adicionar"
+        phClass="ph ph-plus"
+      ></app-secondary-button>
+    </div>
+    <div class="atividade-group">
+      <label class="form-label">Lista de atividades</label>
+      <div class="item-list w-100">
+        @for (atividade of atividades; track $index) {
+        <div class="item">
+          <span class="item-text">{{ atividade }}</span>
+          <div (click)="removerAtividade($index)" class="remove-btn">
+            <i class="ph-bold ph-x"></i>
+          </div>
+        </div>
+        @if($index + 1 != atividades.length){
+        <hr />
+        } }
+      </div>
+    </div>
+    <app-primary-button
+      (click)="submitCertificado()"
+      [disabled]="!formValido()"
+      text="Gerar Certificado"
+    ></app-primary-button>
+  </div>
+</form>

@@ -1,0 +1,31 @@
+.navbar {
+  background: white;
+  padding: 20px 28px 20px 12px;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.navbar-logo img {
+  height: 40px;
+  width: 40px;
+}
+
+.active {
+  color: #3b5ac2;
+}
+
+.nav-item {
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.nav-item i {
+  font-size: 20px;
+}
+
+.nav-link {
+  padding: 0px 6px !important;
+}
+
+.nav-link.active {
+  color: #3b5ac2;
+}

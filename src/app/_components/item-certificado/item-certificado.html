@@ -1,0 +1,9 @@
+<div class="card p-3 custom-card">
+  <div class="d-flex justify-content-between align-items-center">
+    <div>
+      <div class="fw-bold nome-aluno">{{ nome }}</div>
+      <small class="small-date">Gerado em {{ data }}</small>
+    </div>
+    <app-secondary-button [routerLink]="['/certificados', id]" text="Ver"></app-secondary-button>
+  </div>
+</div>

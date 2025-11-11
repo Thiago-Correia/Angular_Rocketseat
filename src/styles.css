@@ -1,1 +1,30 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+  font-family: 'Inter', sans-serif !important;
+  font-optical-sizing: auto !important;
+}
+
+.custom-title {
+  color: #121621;
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: bold;
+  letter-spacing: 0;
+  text-align: center;
+  margin-bottom: 4px;
+}
+
+.custom-text {
+  color: #64748b;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: normal;
+  letter-spacing: 0;
+  text-align: center;
+}
+
+.content-titles {
+  height: 60px;
+  gap: 4;
+  margin-bottom: 32px;
+}
